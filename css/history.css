@@ -1,0 +1,216 @@
+.history-positions-row,
+.history-orders-row,
+.history-deals-row {
+  display: flex;
+  width: 100%;
+  margin: auto;
+}
+
+.history-positions-dots,
+.history-orders-dots,
+.history-deals-dots {
+  flex: 1;
+  border-bottom: 2px dotted var(--trade-dots-color);
+}
+
+.history-balance-gap {
+  flex: 1;
+}
+
+.history-row-balance {
+  display: flex;
+  height: 5vh;
+  width: 100%;
+  background-color: #e7e7e77e;
+}
+
+.history-balance-accordion {
+  width: 100%;
+  padding: 0;
+}
+
+.history-balance-accordion .history-balance-accordion-link {
+  cursor: pointer;
+  /* display: block; */
+  padding: 0px 0px 55px 0px;
+  /* color: #fcfafa; */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  /* font-weight: bolder;
+    font-size: .8rem; */
+  border-top: 0.1px solid var(--watchlist-row-border);
+  border-bottom: 0.1px solid var(--watchlist-row-border);
+  position: relative;
+}
+
+.history-balance-accordion .history-balance-accordion-border-remove {
+  cursor: pointer;
+  /* display: block; */
+  padding: 0px 0px 55px 0px;
+  /* color: #fcfafa; */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  /* font-weight: bolder;
+    font-size: .8rem; */
+  border-top: 0.1px solid var(--watchlist-row-border);
+  /* border-bottom: 0.1px solid var(--watchlist-row-border); */
+  position: relative;
+}
+
+.history-ul {
+  list-style-type: none;
+}
+
+.history-balance-accordion-submenu-container {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.history-balance-accordion-submenu {
+  display: none;
+  font-size: 0.8rem;
+  border-bottom: 0.1px solid var(--watchlist-row-border);
+  list-style: none;
+  padding: 0;
+}
+
+.history-balance-accordion-submenu-remove-border {
+  display: none;
+  font-size: 0.8rem;
+  border-bottom: none;
+  list-style: none;
+  padding: 0;
+}
+
+/* .history-balance-accordion-submenu-row {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 10px;
+} */
+
+.history-positions-accordion-balance-text {
+  position: absolute;
+  top: 10px;
+  left: auto;
+  font-weight: 500;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  color: var(--history-positions-accordion-balance-text);
+}
+
+.history-positions-accordion-balance-timestamp {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  left: auto;
+  font-size: 0.7rem;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  color: var(--history-positions-accordion-balance-text);
+}
+
+.history-positions-accordion-balance-value {
+  position: absolute;
+  top: 30px;
+  right: 5px;
+  left: auto;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--history-positions-accordion-balance-text);
+}
+
+.history-balance-accordion-submenu-detail-list {
+  display: grid !important;
+  grid-template-columns: auto auto auto auto !important;
+}
+
+.history-balance-accordion-submenu-detail-row-sub-titles {
+  color: var(--history-balance-row-sub-titles-color);
+  font-size: 0.8rem;
+  position: relative;
+}
+
+.history-balance-column-value-right {
+  margin-right: 10px;
+  text-align: right;
+}
+
+.history-balance-submenu-column-right {
+  text-align: right;
+}
+
+.history-second-navbar {
+  margin: -0.2rem -0.92rem 0 -1rem;
+  /* width: auto; */
+  background-color: #0caf82;
+  background-color: var(--button-active-color);
+}
+
+.paper-shadow-bottom-z-2 {
+  box-shadow: 3px -1px 17px 0 rgb(0 0 0 / 10%);
+}
+
+.nav-tabs .nav-link.active {
+  color: #495057;
+  background-color: var(--button-active-color);
+  /* border-color: #dee2e6 #dee2e6 #fff; */
+}
+
+.nav-tabs .nav-link {
+  color: var(--nav-link-color);
+}
+
+.nav-tabs .nav-link {
+  border: 0;
+}
+
+.history_date_container {
+  width: 38vw;
+  background-color: var(--watchlist-container-bg);
+}
+
+.positions-profit-text,
+.positions-deposit-text,
+.positions-swap-text,
+.positions-commission-text,
+.positions-balance-text {
+  color: var(--watchlist-item-color);
+}
+
+.positions-profit-value,
+.positions-deposit-value,
+.positions-swap-value,
+.positions-commission-value,
+.positions-balance-value {
+  color: var(--watchlist-item-color);
+}
+
+.filled-text,
+.cancell-text,
+.total-text {
+  color: var(--watchlist-item-color);
+}
+
+.filled-value,
+.cancell-value,
+.total-value {
+  color: var(--watchlist-item-color);
+}
+
+.deals-profit-text,
+.deals-deposit-text,
+.deals-swap-text,
+.deals-commission-text,
+.deals-balance-text {
+  color: var(--watchlist-item-color);
+}
+
+.deals-profit-value,
+.deals-deposit-value,
+.deals-swap-value,
+.deals-commission-value,
+.deals-balance-value {
+  color: var(--watchlist-item-color);
+}

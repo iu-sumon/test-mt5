@@ -1,0 +1,100 @@
+.watchlist-parent {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1rem;
+  border-bottom: 0.5px solid var(--watchlist-row-border);
+  padding-bottom: 0.5rem;
+  padding-top: 1rem;
+}
+.watchlist-first-column {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.watchlist-timestamp {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--watchlist-item-color);
+}
+.watchlist-last-column {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+  grid-gap: 0.6rem;
+}
+.watchlist-last-column-bottom-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 0.7rem;
+}
+.watchlist-last-column-child2 {
+  position: absolute;
+  top: 76%;
+  left: 50%;
+  translate: -44% -93%;
+}
+.watchlist-last-column-middle {
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 5px;
+}
+.watchlist-li-container {
+  padding-left: 0px !important;
+}
+.watchlist-top-text {
+  float: right;
+  color: var(--watchlist-item-color);
+}
+
+.watchlist-top-text-first {
+  color: var(--watchlist-item-color);
+}
+
+.watchlist-sell-price-container {
+  background-color: var(--watchlist-sell-price-container);
+}
+
+.watchlist-buy-price-container {
+  background-color: var(--button-active-color);
+}
+
+.watchlist-spread-container {
+  background-color: var(--watchlist-spread-container);
+  color: #424242;
+}
+
+.watchlist-modal-dialog {
+  position: fixed;
+  top: auto;
+  right: auto;
+  left: auto;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.watchlist_container {
+  width: 100%;
+  height: 80vh;
+  background-color: var(--watchlist-container-bg);
+}
+
+.modal.fade:not(.in) .watchlist-modal-dialog {
+  -webkit-transform: translate3d(0, 25%, 0);
+  transform: translate3d(0, 25%, 0);
+}
+
+.watchlist-modal-content {
+  width: 100%;
+  height: 70vh;
+  z-index: 10;
+  background-color: var(--button-inactive-color);
+}
+
+.watchlist-modal-ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.watchlist_item {
+  color: var(--watchlist-item-color);
+}

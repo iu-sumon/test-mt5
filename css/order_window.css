@@ -1,0 +1,153 @@
+.orderwindowheader-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.order-window-form {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.value-button {
+  display: inline-block;
+  /* border: 1px solid #ddd; */
+  margin: 0px;
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 11px 0;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.value-button:hover {
+  cursor: pointer;
+}
+
+form #input-wrap {
+  margin: 0px;
+  padding: 0px;
+}
+
+input#first_field {
+  background-color: transparent;
+  text-align: center;
+  border: 0px solid;
+  height: 40px;
+  width: 25vw;
+  color: var(--watchlist-item-color);
+  font-weight: 500;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.decrease-increase-execution-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 0.7rem;
+}
+
+.decrease-increase-sltp-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+}
+
+input#sl_value_field,
+input#tp_value_field,
+input#deviation_field,
+input#price_field,
+input#stop_limit_price_field {
+  background-color: transparent;
+  text-align: center;
+  border: 0px solid;
+  height: 4vh;
+  width: 30vw;
+  color: var(--watchlist-item-color);
+  font-weight: 500;
+  outline: none;
+}
+
+input#deviation_field
+{
+  background-color: transparent;
+  text-align: center;
+  border: 0px solid;
+  height: 4vh;
+  width: 40px;
+  color: var(--watchlist-item-color);
+  font-weight: 500;
+}
+
+input#order_execution_field, input#expiration_field {
+  background-color: transparent;
+  border: 0px solid;
+  height: 20px;
+  width: 160px;
+  color: var(--watchlist-item-color);
+  caret-color: transparent;
+  outline: none;
+  text-align: center;
+}
+
+#footer-order-window {
+  display: none;
+  position: fixed;
+  -ms-flex-order: 1;
+  bottom: 0;
+  order: 1;
+  width: 100%;
+  z-index: 10;
+  height: 3rem;
+}
+
+.btn-block {
+  display: block;
+  width: 100% !important;
+}
+
+#execution_expiration_field,
+#execution_price_field,
+#execution_stop_limit_price_field {
+  display: none !important;
+}
+
+.order_window_modal_container {
+  top: -2rem;
+  text-align: center;
+  background-color: var(--watchlist-container-bg);
+}
+.symbol_list_container {
+  width: 30vw;
+  background-color: var(--watchlist-container-bg);
+}
+.symbol_list_modal-dialog {
+  position: fixed;
+  margin: auto;
+  right: 12px;
+  top: 9px;
+  z-index: 1213;
+  text-align: center;
+}
+.expiration_modal_container {
+  top: 22rem;
+  text-align: right;
+  background-color: var(--watchlist-container-bg);
+}
+
+.footer-place {
+  display: none;
+}
